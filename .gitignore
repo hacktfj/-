@@ -1,0 +1,15 @@
+node_modules
+.env
+cache
+artifacts
+typechain-types
+coverage
+coverage.json
+
+# Frontend
+frontend/.next
+frontend/node_modules
+frontend/.env.local
+
+# Hardhat
+*.tsbuildinfo

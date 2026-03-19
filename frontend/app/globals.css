@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-2xl p-6;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-500 disabled:bg-gray-700 disabled:cursor-not-allowed
+           text-white font-semibold py-3 px-8 rounded-xl transition-all duration-200
+           active:scale-95;
+  }
+
+  .stat-label {
+    @apply text-gray-400 text-sm;
+  }
+
+  .stat-value {
+    @apply text-white text-2xl font-bold mt-1;
+  }
+}
